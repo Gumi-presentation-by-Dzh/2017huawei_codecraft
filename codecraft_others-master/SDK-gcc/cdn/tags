@@ -1,0 +1,106 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+C	deploy.h	/^    int C;          \/\/ cost per Gbps$/;"	m	struct:Edge
+CustomerNodeInfo	deploy.h	/^    CustomerNodeInfo(int _v, int _w): v(_v), w(_w) {}$/;"	f	struct:CustomerNodeInfo
+CustomerNodeInfo	deploy.h	/^struct CustomerNodeInfo {$/;"	s
+D	deploy.h	/^    int D[MAX_V];$/;"	m	class:Fuck
+Edge	deploy.h	/^struct Edge {$/;"	s
+EdgeInfo	deploy.h	/^    EdgeInfo(int _v, int _c): v(_v), c(_c) {}$/;"	f	struct:EdgeInfo
+EdgeInfo	deploy.h	/^struct EdgeInfo {$/;"	s
+Fuck	deploy.h	/^class Fuck {$/;"	c
+GA_cross	deploy.cpp	/^void XJBS::GA_cross(Particle & s1, Particle & s2) {$/;"	f	class:XJBS
+INLINE	io.cpp	13;"	d	file:
+MAX_EDGE_NUM	lib/lib_io.h	4;"	d
+MAX_LINE_LEN	io.cpp	11;"	d	file:
+MAX_V	deploy.h	/^const int MAX_V = 2010;$/;"	v
+OBMA	deploy.cpp	/^void XJBS::OBMA(Particle & s) {$/;"	f	class:XJBS
+PRINT	io.cpp	15;"	d	file:
+PRINT	io.cpp	17;"	d	file:
+PSO_c1	deploy.h	/^    double PSO_c1, PSO_c2, PSO_w;$/;"	m	class:XJBS
+PSO_c2	deploy.h	/^    double PSO_c1, PSO_c2, PSO_w;$/;"	m	class:XJBS
+PSO_update	deploy.cpp	/^inline void XJBS::PSO_update(Particle & s) {$/;"	f	class:XJBS
+PSO_w	deploy.h	/^    double PSO_c1, PSO_c2, PSO_w;$/;"	m	class:XJBS
+Particle	deploy.cpp	/^Particle::Particle(int length): v(length, 0), v_best(length, 0), vp(length, 0), cost_best(infll), cost(infll) {}$/;"	f	class:Particle
+Particle	deploy.cpp	/^Particle::Particle(int length, vector<int> & vi, Fuck * & fuck): $/;"	f	class:Particle
+Particle	deploy.h	/^class Particle {$/;"	c
+U	deploy.h	/^    int U;          \/\/ bandwidth$/;"	m	struct:Edge
+XJBS	deploy.cpp	/^XJBS::XJBS(Fuck & fk) {$/;"	f	class:XJBS
+XJBS	deploy.h	/^class XJBS {$/;"	c
+__LIB_IO_H__	lib/lib_io.h	2;"	d
+__LIB_TIME_H__	lib/lib_time.h	2;"	d
+__ROUTE_H__	deploy.h	2;"	d
+add_edge	deploy.cpp	/^void Fuck::add_edge(int u, int v, int w, int c) {$/;"	f	class:Fuck
+add_server	deploy.cpp	/^void Fuck::add_server(vector<int> & v) $/;"	f	class:Fuck
+addone	deploy.cpp	/^void XJBS::addone(vector<int> & v) {$/;"	f	class:XJBS
+aug	deploy.cpp	/^int Fuck::aug(int u, int m) {$/;"	f	class:Fuck
+c	deploy.h	/^    int c;          \/\/ cost per Gbps $/;"	m	struct:Edge
+c	deploy.h	/^    int c;$/;"	m	struct:EdgeInfo
+c1	deploy.h	/^const double c1 = 1.0, c2 = 1.6, w = 0.9;$/;"	v
+c2	deploy.h	/^const double c1 = 1.0, c2 = 1.6, w = 0.9;$/;"	v
+cmp	deploy.cpp	/^bool cmp(const Particle & p1, const Particle & p2) {$/;"	f
+cnt	deploy.h	/^    int cnt;$/;"	m	class:XJBS
+cost	deploy.h	/^    long long cost;$/;"	m	class:Fuck
+cost	deploy.h	/^    long long cost;$/;"	m	class:Particle
+cost_best	deploy.h	/^    long long cost_best;$/;"	m	class:Particle
+costflow	deploy.cpp	/^long long Fuck::costflow() {$/;"	f	class:Fuck
+customer_nodes	deploy.h	/^    vector<CustomerNodeInfo> customer_nodes; \/\/ all customer nodes' infomations$/;"	m	class:Fuck
+customer_num	deploy.h	/^    int customer_num;    \/\/ customer node num$/;"	m	class:Fuck
+d	deploy.h	/^    vector<vector<int> > d;$/;"	m	class:Fuck
+decode	deploy.cpp	/^void XJBS::decode(vector<double> & vd, vector<int> & vi) {$/;"	f	class:XJBS
+deploy_server	deploy.cpp	/^void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)$/;"	f
+dist	deploy.h	/^    int dist;$/;"	m	class:Fuck
+e	deploy.h	/^    Edge *e[MAX_V]; \/\/ every vertex's induced edge$/;"	m	class:Fuck
+edge_num	deploy.h	/^    int edge_num;        \/\/ network edge num$/;"	m	class:Fuck
+epool	deploy.h	/^    Edge epool[MAX_EDGE_NUM * 5];$/;"	m	class:Fuck
+first_second	deploy.cpp	/^double first_second;$/;"	v
+flow	deploy.h	/^    int flow;$/;"	m	class:Fuck
+fuck	deploy.h	/^    Fuck *fuck;$/;"	m	class:XJBS
+gbest	deploy.h	/^    Particle gbest;$/;"	m	class:XJBS
+get_best	deploy.cpp	/^void XJBS::get_best(vector<int> & server) {$/;"	f	class:XJBS
+graph	deploy.h	/^    vector<vector<EdgeInfo> > graph;$/;"	m	class:Fuck
+inf	deploy.h	/^const int inf = 0x3f3f3f3f;  \/\/ I think this variable means infinite$/;"	v
+infll	deploy.h	/^const long long infll = 0x3f3f3f3f3f3f3f3f;$/;"	v
+initial	deploy.cpp	/^double XJBS::initial(int size) {$/;"	f	class:XJBS
+kmeans	deploy.cpp	/^void Fuck::kmeans(int k, vector<int> & clusters) {$/;"	f	class:Fuck
+knuth_shuffle	deploy.cpp	/^void knuth_shuffle(vector<T> & v) {$/;"	f
+l	deploy.h	/^    int l; \/\/ the @fuck's nodenum$/;"	m	class:XJBS
+last_second	deploy.cpp	/^double last_second = 90 - 1;$/;"	v
+main	cdn.cpp	/^int main(int argc, char *argv[])$/;"	f
+max_p_size	deploy.h	/^    int max_p_size;$/;"	m	class:XJBS
+modlabel	deploy.cpp	/^bool Fuck::modlabel() {$/;"	f	class:Fuck
+need_flow	deploy.h	/^    int need_flow;       \/\/ total need of video resources$/;"	m	class:Fuck
+next	deploy.h	/^    Edge *next;     \/\/ the next edge of this vertex$/;"	m	struct:Edge
+node_num	deploy.h	/^    int node_num;        \/\/ network node num$/;"	m	class:Fuck
+p	deploy.h	/^    vector<Particle> p;$/;"	m	class:XJBS
+pair	deploy.h	/^    Edge *pair;     \/\/ the reverse edge of the edge, the cost is negative-@c, the bandwidth sum is zero$/;"	m	struct:Edge
+print_flow	deploy.cpp	/^void Fuck::print_flow(vector<vector<int> > & node, vector<int> &flow) {$/;"	f	class:Fuck
+print_time	io.cpp	/^void print_time(const char *head)$/;"	f
+psz	deploy.h	/^    int psz; \/\/ the current index in @epool$/;"	m	class:Fuck
+psz_tmp	deploy.h	/^    int psz_tmp;  \/\/ store the @psz temporary$/;"	m	class:Fuck
+read_file	io.cpp	/^int read_file(char ** const buff, const unsigned int spec, const char * const filename)$/;"	f
+readtopo	deploy.cpp	/^void Fuck::readtopo(char * topo[MAX_EDGE_NUM], int line_num) { $/;"	f	class:Fuck
+release_buff	io.cpp	/^void release_buff(char ** const buff, const int valid_item_num)$/;"	f
+reproduction	deploy.cpp	/^inline void XJBS::reproduction() {$/;"	f	class:XJBS
+run1	deploy.cpp	/^void XJBS::run1() {$/;"	f	class:XJBS
+run2	deploy.cpp	/^void XJBS::run2() {$/;"	f	class:XJBS
+s	deploy.h	/^    int s;   \/\/ total node num, including network nodes and customer nodes$/;"	m	class:Fuck
+server_cost	deploy.h	/^    long long server_cost;  \/\/ constant cost of building server$/;"	m	class:Fuck
+spfa	deploy.cpp	/^void Fuck::spfa() {$/;"	f	class:Fuck
+t	deploy.h	/^    int t;          \/\/ neighbor id$/;"	m	struct:Edge
+t	deploy.h	/^    int t;$/;"	m	class:Fuck
+u	deploy.h	/^    int u;          \/\/ bandwidth$/;"	m	struct:Edge
+updateone	deploy.cpp	/^inline void XJBS::updateone(Particle & s) {$/;"	f	class:XJBS
+v	deploy.h	/^    int v;$/;"	m	struct:CustomerNodeInfo
+v	deploy.h	/^    int v;$/;"	m	struct:EdgeInfo
+v	deploy.h	/^    vector<double> v;$/;"	m	class:Particle
+v_best	deploy.h	/^    vector<double> v_best;$/;"	m	class:Particle
+vis	deploy.h	/^    int vis[MAX_V]; \/\/ used in spfa(), see the usage in spfa()'s definition$/;"	m	class:Fuck
+vp	deploy.h	/^    vector<double> vp;$/;"	m	class:Particle
+w	deploy.h	/^    int w;$/;"	m	struct:CustomerNodeInfo
+w	deploy.h	/^const double c1 = 1.0, c2 = 1.6, w = 0.9;$/;"	v
+write_file	io.cpp	/^INLINE void write_file(const bool cover, const char * const buff, const char * const filename)$/;"	f
+write_result	io.cpp	/^void write_result(const char * const buff,const char * const filename)$/;"	f

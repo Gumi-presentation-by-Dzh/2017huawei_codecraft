@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+D	deploy.h	/^    vector<int> D;$/;"	m	struct:costflow
+GA_cross	deploy.cpp	/^PSO::GA_cross(Particle & s1, Particle & s2) {$/;"	f	class:PSO
+INF	deploy.h	24;"	d
+INLINE	io.cpp	13;"	d	file:
+LL	deploy.h	/^typedef long long LL;$/;"	t
+MAX_EDGE_NUM	lib/lib_io.h	4;"	d
+MAX_ITERATION	deploy.h	25;"	d
+MAX_LINE_LEN	io.cpp	11;"	d	file:
+OBMA	deploy.cpp	/^PSO::OBMA(Particle & s) {$/;"	f	class:PSO
+PRINT	io.cpp	15;"	d	file:
+PRINT	io.cpp	17;"	d	file:
+PSO	deploy.cpp	/^PSO::PSO(graph & g_in): g(g_in){}$/;"	f	class:PSO
+PSO	deploy.h	/^struct PSO$/;"	s
+PSO_update	deploy.cpp	/^PSO::PSO_update(Particle & s) {						$/;"	f	class:PSO
+Particle	deploy.cpp	/^Particle::Particle(int length):$/;"	f	class:Particle
+Particle	deploy.h	/^    Particle(int length, vector<int> & vi, graph& g):$/;"	f	struct:Particle
+Particle	deploy.h	/^struct Particle {$/;"	s
+__LIB_IO_H__	lib/lib_io.h	2;"	d
+__LIB_TIME_H__	lib/lib_time.h	2;"	d
+__ROUTE_H__	deploy.h	3;"	d
+addEdge	deploy.cpp	/^graph::addEdge(vid _u, vid _v, int _bw, int _cost, int flag)$/;"	f	class:graph
+add_candidate	deploy.cpp	/^PSO::add_candidate(vector<int> & cores) {$/;"	f	class:PSO
+allpairs_sp	deploy.cpp	/^graph::allpairs_sp()$/;"	f	class:graph
+augmenting	deploy.cpp	/^costflow::augmenting(vid v, int m)$/;"	f	class:costflow
+bw	deploy.h	/^    int bw;     \/\/ total bandwidth$/;"	m	struct:edge
+c	deploy.h	/^    int c;      \/\/ the current cost with update(used in zkw)$/;"	m	struct:edge
+c1	deploy.h	/^    double c1, c2, w;   \/\/pso$/;"	m	struct:PSO
+c2	deploy.h	/^    double c1, c2, w;   \/\/pso$/;"	m	struct:PSO
+c_node_num	deploy.h	/^    int c_node_num;          \/\/ consumer node number$/;"	m	struct:graph
+candidates	deploy.h	/^    vector<Particle> candidates;\/\/\/instead p;$/;"	m	struct:PSO
+cap	deploy.h	/^    int cap;    \/\/ the current capacity(used in zkw)$/;"	m	struct:edge
+cluster	deploy.cpp	/^graph::cluster(int k, vector<vid> &cores)$/;"	f	class:graph
+cmp	deploy.cpp	/^cmp(const Particle & p1, const Particle & p2) {$/;"	f
+cnt	deploy.h	/^    int cnt;$/;"	m	struct:PSO
+compute	deploy.cpp	/^costflow::compute()$/;"	f	class:costflow
+consumer	deploy.h	/^    consumer():v(-1), need(INF) {}$/;"	f	struct:consumer
+consumer	deploy.h	/^    consumer(vid _v, int _need):v(_v), need(_need){}$/;"	f	struct:consumer
+consumer	deploy.h	/^struct consumer$/;"	s
+consumers	deploy.h	/^    vector<consumer> consumers;  \/\/ all consumer node infomations$/;"	m	struct:graph
+cost	deploy.h	/^        LL cost;$/;"	m	struct:costflow
+cost	deploy.h	/^    int cost;   \/\/ cost per Gbps$/;"	m	struct:edge
+cost	deploy.h	/^    long long cost;$/;"	m	struct:Particle
+cost_best	deploy.h	/^    long long cost_best;$/;"	m	struct:Particle
+costflow	deploy.cpp	/^costflow::costflow(graph &_g):g(_g), vis(_g.n_node_num + _g.c_node_num + 5, 0)$/;"	f	class:costflow
+costflow	deploy.h	/^struct costflow$/;"	s
+d	deploy.h	/^    vector<vector<int>> d;$/;"	m	struct:graph
+decode	deploy.cpp	/^PSO::decode(vector<double> & vd, vector<int> & vi) {$/;"	f	class:PSO
+deploy_server	deploy.cpp	/^void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)$/;"	f
+dest	deploy.h	/^    vid dest;$/;"	m	struct:costflow
+dist	deploy.h	/^    int dist;$/;"	m	struct:costflow
+e	deploy.h	/^    vector<vector<edge>> e;$/;"	m	struct:graph
+edge	deploy.h	/^    edge(vid _v, int _cap, int _c, int _e = 0, int _bw = 0, int _cost = INF):$/;"	f	struct:edge
+edge	deploy.h	/^struct edge$/;"	s
+edge_num	deploy.h	/^    int edge_num;$/;"	m	struct:graph
+first_second	deploy.h	/^    double first_second;$/;"	m	struct:PSO
+flow	deploy.h	/^    int flow;$/;"	m	struct:costflow
+g	deploy.h	/^    graph &g;$/;"	m	struct:PSO
+g	deploy.h	/^    graph &g;$/;"	m	struct:costflow
+gbest	deploy.h	/^    Particle gbest; $/;"	m	struct:PSO
+get_best	deploy.cpp	/^PSO::get_best(vector<int> & server) {$/;"	f	class:PSO
+getflowcost	deploy.cpp	/^costflow::getflowcost()$/;"	f	class:costflow
+graph	deploy.h	/^struct graph$/;"	s
+ifre	deploy.h	/^    bool ifre;  \/\/ indicate whether this is a reverse edge$/;"	m	struct:edge
+init	deploy.cpp	/^PSO::init(int size) {$/;"	f	class:PSO
+init	deploy.cpp	/^graph::init(char *topo[MAX_EDGE_NUM], int linenum)$/;"	f	class:graph
+l	deploy.h	/^    int l;$/;"	m	struct:PSO
+last_second	deploy.h	/^    double last_second;$/;"	m	struct:PSO
+main	cdn.cpp	/^int main(int argc, char *argv[])$/;"	f
+make_supersink	deploy.cpp	/^graph::make_supersink()$/;"	f	class:graph
+make_supersource	deploy.cpp	/^graph::make_supersource(vector<vid> &sours)$/;"	f	class:graph
+max_size	deploy.h	/^    int max_size;  \/\/ max_p_size$/;"	m	struct:PSO
+modlabel	deploy.cpp	/^costflow::modlabel()$/;"	f	class:costflow
+n_node_num	deploy.h	/^    int n_node_num;          \/\/ network node number$/;"	m	struct:graph
+need	deploy.h	/^    int need;$/;"	m	struct:consumer
+phase	deploy.cpp	/^PSO::phase(int i) {$/;"	f	class:PSO
+print_flow	deploy.cpp	/^costflow::print_flow(vector<vector<vid>> &nodes, vector<int> &flow)$/;"	f	class:costflow
+print_time	io.cpp	/^void print_time(const char *head)$/;"	f
+pvector	deploy.cpp	/^pvector(vector<T> &v, int fd = 1)$/;"	f
+re	deploy.h	/^    int re;   \/\/ the pair edge with same ends$/;"	m	struct:edge
+read_file	io.cpp	/^int read_file(char ** const buff, const unsigned int spec, const char * const filename)$/;"	f
+release_buff	io.cpp	/^void release_buff(char ** const buff, const int valid_item_num)$/;"	f
+reproduction	deploy.cpp	/^PSO::reproduction() {$/;"	f	class:PSO
+res	deploy.h	/^    int res;$/;"	m	struct:costflow
+resetD	deploy.cpp	/^costflow::resetD(int value)$/;"	f	class:costflow
+resetvis	deploy.cpp	/^costflow::resetvis(int value)$/;"	f	class:costflow
+sdest	deploy.h	/^    vid sdest;               \/\/ super sink$/;"	m	struct:graph
+server_cost	deploy.h	/^    int server_cost;         \/\/ constant cost of server$/;"	m	struct:graph
+servers	deploy.h	/^    const vector<vid> servers;$/;"	m	struct:costflow
+ssour	deploy.h	/^    vid ssour;               \/\/ super source$/;"	m	struct:graph
+totalneed	deploy.h	/^    int totalneed;$/;"	m	struct:graph
+updateone	deploy.cpp	/^PSO::updateone(Particle & s) {$/;"	f	class:PSO
+v	deploy.h	/^    vector<double> v;$/;"	m	struct:Particle
+v	deploy.h	/^    vid v;$/;"	m	struct:consumer
+v	deploy.h	/^    vid v;$/;"	m	struct:edge
+v_best	deploy.h	/^    vector<double> v_best;$/;"	m	struct:Particle
+vid	deploy.h	/^typedef int vid;$/;"	t
+vis	deploy.h	/^    vector<int> vis;$/;"	m	struct:costflow
+vp	deploy.h	/^    vector<double> vp;$/;"	m	struct:Particle
+w	deploy.h	/^    double c1, c2, w;   \/\/pso$/;"	m	struct:PSO
+write_file	io.cpp	/^INLINE void write_file(const bool cover, const char * const buff, const char * const filename)$/;"	f
+write_result	io.cpp	/^void write_result(const char * const buff,const char * const filename)$/;"	f

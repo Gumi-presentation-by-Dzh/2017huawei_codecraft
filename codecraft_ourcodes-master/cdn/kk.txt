@@ -1,0 +1,5 @@
+line num is :110 
+allpairs_sp()
+exit allpairs_sp()
+enter cluster k:1
+pvector: 44 
